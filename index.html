@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day24</title>
+    <style>
+         .toflex{
+            display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+                align-content: center;              
+        }   
+        @media only screen and  (max-width:500px) {
+            body{
+                background-color: aquamarine;
+               display: flex;
+               flex-wrap: wrap;
+              left: 200px;
+            }
+            center >a{
+                display: block;
+                background-color: black;
+                color: white;
+            }
+        }
+        .p1{
+            margin: 15px;
+        }
+        .photo{
+           
+            position: relative;
+          
+            color: white; 
+        }
+        .h1{
+            border: 1px groove ;
+            position: absolute;
+            top: -320px;
+            
+
+        }
+        .photo > h1{
+            padding: 9px;
+            text-align: center;
+           
+        }
+        center >a{
+            
+            background-color: rgb(227, 225, 225);
+            color: black;
+            width: 300px;
+            height: 40px;
+            padding: 10px;
+        }
+        center >a:hover{
+            background-color: grey;
+            color: white;
+        }
+        #body{
+            margin: 40px 300px;
+        }
+        #body>img{
+            padding-top: 20px;
+            
+        }
+        #cont{
+            background-color: rgb(233, 228, 228);
+            margin: 40px 300px;
+            padding: 50px 50px;
+            width: 900px;
+        }
+        form{
+            line-height: 40px;
+            font-size: larger;
+           
+       
+        }
+      .but{
+        background-color: rgb(116, 114, 114);
+        width: 880px;
+        height: 30px;
+        color: white;
+        font-size: medium;
+      }
+     
+     
+    </style>
+</head>
+<body>
+    <button id="w1" style="border-radius: 10px; font-size: x-large; color: white;  background-color: rgb(0, 136, 255);">New page</button>
+    <button id="w2" style="border-radius: 10px; font-size: x-large; color: white;  background-color: rgb(0, 136, 255);">Back page</button>
+    <button id="w" style="border-radius: 10px; font-size: x-large; color: white;  background-color: rgb(0, 136, 255);">Forward</button>
+
+   <div class="toflex">
+    <div class="p1"> <img src="24dp1.png" ></div>
+
+<div class="photo" id="home">
+    <h1 class="h1" style="opacity: 0.9; font-weight: 700; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">JANE DOE <br>
+       <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight:lighter; "> PHOTOGRAPHER</span></h1>
+</div>
+
+<center>
+    <a href="#home" style="text-decoration: none;">HOME</a>
+    <a href="#body"style="text-decoration: none;">PORTFOLIO</a>
+    <a href="#cont"style="text-decoration: none;">CONTACT</a>
+</center>
+<div id="body">
+    <img src="24dp2.png" >
+    <img src="24dp3.png" >
+    <img src="24dp4.png" >
+    <img src="24dp5.png" >
+    <img src="24dp6.png" >
+    
+</div>
+
+<div id="cont">
+<center><h1  style="font-weight: 200;">Contact</h1></center>
+<p style="font-size: larger;">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.</p>
+<form action="">
+    NAME <br>
+    <input type="text" name="" size="150"  id=""><br>
+    EMAIL <br>
+    <input type="text" name="" size="150"  id=""><br>
+    MESSAGE <br>
+    <input type="text" name="" size="150"  id=""><br>
+    <button class="but">SEND</button>
+</form><br>
+powered by <a href="https://www.w3schools.com/w3css/default.asp" >w3.css</a>
+</div>
+
+   </div>
+
+
+   <script>
+        x=document.getElementById("w1")
+    x.addEventListener("click",name9)
+    function name9() {
+        window.location.href="./cardboot.html"
+   }
+   y=document.getElementById("w2")
+    y.addEventListener("click",name8)
+    function name8() {
+        window.location.href="./day17 food.html"
+   }
+
+    a=document.getElementById("w")
+    a.addEventListener("click",name)
+    function name() {
+        window.history.forward()
+   }
+  
+
+   stor= window.localStorage.setItem("name","jayanth");
+
+</script>
+</body>
+</html>
